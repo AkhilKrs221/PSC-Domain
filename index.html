@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PSC DOMAIN is a modern study dashboard for Kerala PSC aspirants with exam schedules, syllabi, previous questions, notes, quizzes, notifications, and current affairs."
+    />
+    <title>PSC DOMAIN | Kerala PSC Study Hub</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="PSC DOMAIN home">
+        <span class="brand-mark">PD</span>
+        <span>
+          <strong>PSC DOMAIN</strong>
+          <small>Kerala PSC study hub</small>
+        </span>
+      </a>
+
+      <nav class="tabs" aria-label="Main navigation">
+        <button class="tab active" data-tab="home">Home</button>
+        <button class="tab" data-tab="schedule">Exam Schedule</button>
+        <button class="tab" data-tab="syllabus">Syllabus</button>
+        <button class="tab" data-tab="questions">Previous Q&A</button>
+        <button class="tab" data-tab="notes">Notes</button>
+        <button class="tab" data-tab="notifications">Notifications</button>
+        <button class="tab" data-tab="quizzes">Quizzes</button>
+        <button class="tab" data-tab="current-affairs">Current Affairs</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel active" id="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Kerala PSC preparation console</p>
+            <h1>PSC DOMAIN</h1>
+            <p>
+              Track exam dates, study syllabus topics, revise previous questions,
+              open topic-wise notes, and practice daily quizzes from one focused dashboard.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-action" data-open-tab="schedule">View schedule</button>
+              <button class="secondary-action" data-open-tab="quizzes">Start quiz</button>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="Today's study snapshot">
+            <span class="status-dot"></span>
+            <h2>Today&apos;s Focus</h2>
+            <p id="today-focus">Loading focus plan...</p>
+            <div class="mini-stats">
+              <span><strong id="exam-count">0</strong> exams</span>
+              <span><strong id="notification-count">0</strong> notices</span>
+              <span><strong>48</strong> months CA</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="dashboard-grid">
+          <article class="metric-card">
+            <span>Next Exam</span>
+            <strong id="next-exam-name">-</strong>
+            <small id="next-exam-date">-</small>
+          </article>
+          <article class="metric-card">
+            <span>Application Deadline</span>
+            <strong id="next-deadline-name">-</strong>
+            <small id="next-deadline-date">-</small>
+          </article>
+          <article class="metric-card">
+            <span>Quick Links</span>
+            <div class="link-row">
+              <a href="https://www.keralapsc.gov.in/notifications" target="_blank" rel="noreferrer">Notifications</a>
+              <a href="https://www.keralapsc.gov.in/examination-schedule" target="_blank" rel="noreferrer">Schedule</a>
+              <a href="https://www.keralapsc.gov.in/previous-question-papers" target="_blank" rel="noreferrer">Questions</a>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="panel" id="schedule">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Upcoming exams</p>
+            <h2>Exam Schedule</h2>
+          </div>
+          <div class="filters">
+            <input id="schedule-search" type="search" placeholder="Search exam or category" />
+            <select id="schedule-level" aria-label="Filter schedule by level">
+              <option value="all">All levels</option>
+              <option value="10th">10th level</option>
+              <option value="plus-two">Plus Two</option>
+              <option value="degree">Degree</option>
+              <option value="technical">Technical</option>
+            </select>
+          </div>
+        </div>
+        <div class="timeline" id="schedule-list"></div>
+      </section>
+
+      <section class="panel" id="syllabus">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Upcoming and previous exams</p>
+            <h2>Syllabus Library</h2>
+          </div>
+          <div class="filters">
+            <select id="syllabus-year" aria-label="Sort syllabus by year"></select>
+            <input id="syllabus-search" type="search" placeholder="Search exam syllabus" />
+          </div>
+        </div>
+        <div class="cards-grid" id="syllabus-list"></div>
+      </section>
+
+      <section class="panel" id="questions">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Previous question papers</p>
+            <h2>Questions and Answers</h2>
+          </div>
+          <div class="filters">
+            <select id="question-year" aria-label="Sort questions by year"></select>
+            <input id="question-search" type="search" placeholder="Search exam questions" />
+          </div>
+        </div>
+        <div class="cards-grid" id="question-list"></div>
+      </section>
+
+      <section class="panel" id="notes">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Topic-wise preparation</p>
+            <h2>Exam Notes</h2>
+          </div>
+          <div class="filters">
+            <input id="notes-search" type="search" placeholder="Search exam notes" />
+          </div>
+        </div>
+        <div class="notes-layout">
+          <aside class="exam-picker" id="notes-exams"></aside>
+          <div class="topic-notes" id="topic-notes"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="notifications">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Application alerts</p>
+            <h2>PSC Notifications</h2>
+          </div>
+          <a class="official-link" href="https://www.keralapsc.gov.in/notifications" target="_blank" rel="noreferrer">
+            Official PSC notifications
+          </a>
+        </div>
+        <div class="notice-list" id="notification-list"></div>
+      </section>
+
+      <section class="panel" id="quizzes">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Daily practice</p>
+            <h2>Current Affairs and Maths Quizzes</h2>
+          </div>
+          <div class="quiz-switch" role="tablist" aria-label="Quiz type">
+            <button class="quiz-type active" data-quiz="current">Current affairs</button>
+            <button class="quiz-type" data-quiz="math">Maths</button>
+          </div>
+        </div>
+        <div class="quiz-board">
+          <div id="quiz-card"></div>
+          <div class="quiz-actions">
+            <button id="prev-question">Previous</button>
+            <button id="show-answer">Show answer</button>
+            <button id="next-question">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="current-affairs">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Monthly notes archive</p>
+            <h2>Current Affairs</h2>
+          </div>
+          <div class="filters">
+            <select id="ca-year" aria-label="Filter current affairs by year"></select>
+            <select id="ca-month" aria-label="Filter current affairs by month"></select>
+          </div>
+        </div>
+        <div class="cards-grid" id="ca-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>PSC DOMAIN</span>
+      <span>Built for Kerala PSC aspirants. Verify final notices on the official PSC portal before applying.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
