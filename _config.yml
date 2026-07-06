@@ -1,0 +1,12 @@
+title: PSC DOMAIN
+description: Kerala PSC study hub for exam schedules, syllabus, previous questions, notes, quizzes, and current affairs.
+url: "https://akhilkrs221.github.io"
+baseurl: "/PSC-Domain"
+
+theme: null
+plugins: []
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
