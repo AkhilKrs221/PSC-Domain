@@ -5,6 +5,42 @@ const officialLinks = {
   questions: "https://www.keralapsc.gov.in/previous-question-papers",
 };
 
+const externalSources = {
+  freeNotes: "https://thesupernotes.com/free-psc-notes-in-kerala/",
+  currentAffairsJune2026: "https://www.keralapscgk.com/2026/06/download-free-malayalam-current-affairs-pdf-june-2026.html",
+};
+
+const uploadPath = "assets/uploads/";
+
+const uploadedPdfs = [
+  { title: "കേരള ചരിത്രം Quiz", tag: "Kerala History", pdf: `${uploadPath}kerala_history_quiz.pdf`, topics: ["കേരള നവോത്ഥാനം", "സാമൂഹിക പരിഷ്കരണം", "PSC ആവർത്തന ചോദ്യങ്ങൾ"] },
+  { title: "Kerala History MCQ", tag: "Kerala History", pdf: `${uploadPath}Kerala_History_MCQ.pdf`, topics: ["കേരള ചരിത്രം", "സംഭവ വർഷങ്ങൾ", "പ്രമുഖ വ്യക്തികൾ"] },
+  { title: "Kerala History MCQs", tag: "Kerala History", pdf: `${uploadPath}kerala_history_mcqs.pdf`, topics: ["കേരള ചരിത്രം", "മുൻവർഷ ചോദ്യ മാതൃക"] },
+  { title: "Kerala History MCQs - Set 2", tag: "Kerala History", pdf: `${uploadPath}kerala_history_mcqs (2).pdf`, topics: ["കേരള ചരിത്രം", "മാരത്തൺ റിവിഷൻ"] },
+  { title: "KERALA HISTORY MARATHON", tag: "Kerala History", pdf: `${uploadPath}KERALA HISTORY -MARATHON.pdf`, topics: ["കേരള ചരിത്രം", "മുഴുവൻ റിവിഷൻ", "പ്രധാന PSC facts"] },
+  { title: "Indian History MCQ", tag: "Indian History", pdf: `${uploadPath}indian_history_mcq.pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "സ്വാതന്ത്ര്യ സമരം", "ദേശീയ പ്രസ്ഥാനം"] },
+  { title: "Indian History Quiz", tag: "Indian History", pdf: `${uploadPath}indian_history_quiz.pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "MCQ practice"] },
+  { title: "Indian History Exam Questions", tag: "Indian History", pdf: `${uploadPath}Indian_History_Exam_Questions.pdf`, topics: ["മുൻവർഷ ചോദ്യം", "ചരിത്രം"] },
+  { title: "ഇന്ത്യൻ ചരിത്രം FULL REVISION", tag: "Indian History", pdf: `${uploadPath}ഇന്ത്യൻ  ചരിത്രം FULL REVISION (2).pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "Malayalam notes", "Full revision"] },
+  { title: "December 2025 Current Affairs 50 MCQs", tag: "Current Affairs", pdf: `${uploadPath}December_2025_CA_50_MCQs.pdf`, topics: ["ഡിസംബർ 2025", "Current affairs", "MCQ"] },
+  { title: "February CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}FEBRUARY CA 2026.pdf`, topics: ["ഫെബ്രുവരി 2026", "Malayalam current affairs"] },
+  { title: "February CA 2026 Quiz", tag: "Current Affairs", pdf: `${uploadPath}february_ca_2026_quiz.pdf`, topics: ["ഫെബ്രുവരി 2026", "Current affairs quiz"] },
+  { title: "March CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}MARCH CA 2026.pdf`, topics: ["മാർച്ച് 2026", "Malayalam current affairs"] },
+  { title: "March CA 2026 MCQ", tag: "Current Affairs", pdf: `${uploadPath}march_ca_2026_mcq.pdf`, topics: ["മാർച്ച് 2026", "Current affairs quiz"] },
+  { title: "April CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}APRIL CA 2026.pdf`, topics: ["ഏപ്രിൽ 2026", "Malayalam current affairs"] },
+  { title: "April 2026 Current Affairs Quiz", tag: "Current Affairs", pdf: `${uploadPath}April_2026_Current_Affairs_Quiz.pdf`, topics: ["ഏപ്രിൽ 2026", "Current affairs quiz"] },
+  { title: "Malayalam History MCQs", tag: "History Malayalam", pdf: `${uploadPath}malayalam_history_mcqs.pdf`, topics: ["മലയാളം", "ചരിത്രം", "PSC MCQ"] },
+  { title: "Maths Interest MCQ Explanations", tag: "Maths", pdf: `${uploadPath}maths_interest_mcq_explanations (2).pdf`, topics: ["പലിശ", "ഗണിതം", "explanations"] },
+  { title: "Math Average Malayalam", tag: "Maths", pdf: `${uploadPath}math_average_malayalam.pdf`, topics: ["ശരാശരി", "Malayalam maths"] },
+  { title: "Maths Series", tag: "Maths", pdf: `${uploadPath}Maths - ശ്രേണികൾ.pdf`, topics: ["ശ്രേണികൾ", "PSC maths"] },
+  { title: "Maths Mental Ability 200 Questions", tag: "Maths", pdf: `${uploadPath}Maths_Mental_Ability_200_Questions.pdf`, topics: ["mental ability", "200 questions", "reasoning"] },
+  { title: "Math Questions With Explanations", tag: "Maths", pdf: `${uploadPath}math_questions_with_explanations.pdf`, topics: ["ഗണിതം", "explanations"] },
+  { title: "Physics Prelims MCQ", tag: "Physics", pdf: `${uploadPath}physics_prelims_mcq.html.pdf`, topics: ["Physics", "prelims", "MCQ"] },
+  { title: "English Vocabulary", tag: "English", pdf: `${uploadPath}English -Vocabulary.pdf`, topics: ["vocabulary", "English", "PSC"] },
+  { title: "10th Level Marked Vocabulary - Part 1", tag: "English", pdf: `${uploadPath}10TH_LEVEL_MARKED_VOCABSPEDIA_part1.pdf`, topics: ["10th level", "vocabulary", "marked PDF", "Part 1"] },
+  { title: "10th Level Marked Vocabulary - Part 2", tag: "English", pdf: `${uploadPath}10TH_LEVEL_MARKED_VOCABSPEDIA_part2.pdf`, topics: ["10th level", "vocabulary", "marked PDF", "Part 2"] },
+];
+
 const exams = [
   {
     name: "LDC Main Examination",
@@ -129,33 +165,112 @@ const previousQuestions = [
       "Find the average of 12, 18, 21, 25. Answer: 19.",
     ],
   },
+  {
+    exam: "Kerala History Uploaded PYQ Practice Pack",
+    year: 2026,
+    pdf: `${uploadPath}KERALA HISTORY -MARATHON.pdf`,
+    questions: [
+      "കേരള ചരിത്രം, നവോത്ഥാനം, സാമൂഹിക പരിഷ്കരണ പ്രസ്ഥാനങ്ങൾ എന്നിവയ്ക്കുള്ള Malayalam PDF pack.",
+      "Related files: Kerala_History_MCQ, kerala_history_quiz, kerala_history_mcqs.",
+      "Use with the Kerala History infinite quiz tab for daily revision.",
+    ],
+  },
+  {
+    exam: "Indian History Uploaded PYQ Practice Pack",
+    year: 2026,
+    pdf: `${uploadPath}ഇന്ത്യൻ  ചരിത്രം FULL REVISION (2).pdf`,
+    questions: [
+      "ഇന്ത്യൻ ചരിത്രം full revision PDF with MCQ-style practice.",
+      "Related files: indian_history_mcq, indian_history_quiz, Indian_History_Exam_Questions.",
+      "Best for 10th level, Plus Two level, and degree preliminary revision.",
+    ],
+  },
+  {
+    exam: "Maths and Mental Ability Uploaded Pack",
+    year: 2026,
+    pdf: `${uploadPath}Maths_Mental_Ability_200_Questions.pdf`,
+    questions: [
+      "Arithmetic and mental ability question pack.",
+      "Includes average, interest, series, and explained maths PDFs in the Notes tab.",
+      "Use for upcoming Kerala PSC preliminary and mains practice.",
+    ],
+  },
 ];
 
 const notifications = [
   {
-    title: "LDC Main Examination - district wise recruitment",
-    categoryNo: "214/2026",
-    lastDate: "2026-07-31",
-    eligibility: "SSLC pass or equivalent; age 18-36 with usual reservation relaxations.",
+    title: "Extra Ordinary Gazette dated 30/06/2026",
+    categoryNo: "39/2026 to 72/2026",
+    lastDate: "2026-08-05",
+    eligibility: "Official Kerala PSC notification batch. Open source page to confirm post-wise qualification, age limit, and district details.",
     link: officialLinks.notifications,
   },
   {
-    title: "Police Constable - Armed Police Battalion",
-    categoryNo: "226/2026",
-    lastDate: "2026-08-14",
-    eligibility: "Plus Two pass, required physical standards, and age 18-26 with eligible relaxations.",
+    title: "Extra Ordinary Gazette dated 30/05/2026",
+    categoryNo: "23/2026 to 38/2026",
+    lastDate: "2026-07-01",
+    eligibility: "Official Kerala PSC notification batch. Verify final application status and instructions on the PSC portal.",
     link: officialLinks.notifications,
   },
   {
-    title: "Assistant Engineer Civil - Public Works Department",
-    categoryNo: "241/2026",
-    lastDate: "2026-08-28",
-    eligibility: "Civil engineering degree or equivalent qualification recognized by the state.",
+    title: "Extra Ordinary Gazette dated 30/04/2026",
+    categoryNo: "19/2026 to 22/2026",
+    lastDate: "2026-06-03",
+    eligibility: "Official Kerala PSC notification batch. Use the portal for post-wise PDF downloads and amendments.",
+    link: officialLinks.notifications,
+  },
+  {
+    title: "Extra Ordinary Gazette dated 31/03/2026",
+    categoryNo: "13/2026 to 18/2026",
+    lastDate: "2026-04-29",
+    eligibility: "Official Kerala PSC notification batch. Check the source before applying or sharing.",
+    link: officialLinks.notifications,
+  },
+  {
+    title: "Extra Ordinary Gazette dated 28/02/2026",
+    categoryNo: "02/2026 to 12/2026",
+    lastDate: "2026-04-01",
+    eligibility: "Official Kerala PSC notification batch. Keep this card as a quick notification bar entry.",
     link: officialLinks.notifications,
   },
 ];
 
 const notePdfs = [
+  {
+    title: "Official Kerala PSC Syllabus PDFs",
+    tag: "Official source",
+    pdf: officialLinks.syllabus,
+    source: officialLinks.syllabus,
+    topics: ["എല്ലാ upcoming exams syllabus", "Kerala PSC official archive", "Download latest PDF from source"],
+  },
+  {
+    title: "Official Kerala PSC Previous Question Papers",
+    tag: "Official source",
+    pdf: officialLinks.questions,
+    source: officialLinks.questions,
+    topics: ["Last 3 years PYQ", "Question paper PDF archive", "Official Kerala PSC source"],
+  },
+  {
+    title: "Official Kerala PSC Notifications",
+    tag: "Official source",
+    pdf: officialLinks.notifications,
+    source: officialLinks.notifications,
+    topics: ["Notification bar source", "Category number", "Last date and eligibility"],
+  },
+  {
+    title: "External Free PSC Notes Directory",
+    tag: "External source",
+    pdf: externalSources.freeNotes,
+    source: externalSources.freeNotes,
+    topics: ["Third-party notes link", "Open source page before downloading", "Permission depends on original publisher"],
+  },
+  {
+    title: "June 2026 Malayalam Current Affairs Source",
+    tag: "External source",
+    pdf: externalSources.currentAffairsJune2026,
+    source: externalSources.currentAffairsJune2026,
+    topics: ["Malayalam current affairs", "Third-party source link", "Download from publisher page"],
+  },
   {
     title: "Kerala PSC Core Notes",
     tag: "Foundation",
@@ -180,15 +295,23 @@ const notePdfs = [
     pdf: "assets/pdfs/psc-domain-geography-scert-notes.pdf",
     topics: ["Kerala geography", "Indian geography", "World basics", "Maps", "Environment"],
   },
+  ...uploadedPdfs,
 ];
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const currentAffairsPdfOverrides = {
+  "2025-12": `${uploadPath}December_2025_CA_50_MCQs.pdf`,
+  "2026-02": `${uploadPath}FEBRUARY CA 2026.pdf`,
+  "2026-03": `${uploadPath}MARCH CA 2026.pdf`,
+  "2026-04": `${uploadPath}APRIL CA 2026.pdf`,
+};
+
 const currentAffairs = [2026, 2025, 2024, 2023].flatMap((year) =>
   months.map((month, index) => ({
     year,
     month,
     title: `${month} ${year} Current Affairs`,
-    pdf: "assets/pdfs/psc-domain-current-affairs-index.pdf",
+    pdf: currentAffairsPdfOverrides[`${year}-${String(index + 1).padStart(2, "0")}`] || "assets/pdfs/psc-domain-current-affairs-index.pdf",
     notes: [
       `${month} focus: revise Kerala government schemes, appointments, awards, sports, and science updates.`,
       `Create a one-page monthly fact sheet with dates, places, firsts, and persons in news.`,
@@ -202,6 +325,9 @@ const quizTopics = [
   { id: "current-affairs", label: "Current Affairs", usesYear: true, usesBoard: false },
   { id: "kerala-history", label: "Kerala History", usesYear: false, usesBoard: false },
   { id: "indian-history", label: "Indian History", usesYear: false, usesBoard: false },
+  { id: "malayalam-history", label: "Malayalam History", usesYear: false, usesBoard: false },
+  { id: "maths", label: "Maths and Mental Ability", usesYear: false, usesBoard: false },
+  { id: "english-vocabulary", label: "English Vocabulary", usesYear: false, usesBoard: false },
   { id: "biology", label: "Biology", usesYear: false, usesBoard: true },
   { id: "physics", label: "Physics", usesYear: false, usesBoard: true },
   { id: "chemistry", label: "Chemistry", usesYear: false, usesBoard: true },
@@ -312,6 +438,84 @@ const quizBank = {
       options: ["1935", "1909", "1919", "1947"],
       answer: 0,
       note: "Constitutional development before independence is an important PSC area.",
+    },
+  ],
+  "malayalam-history": [
+    {
+      q: "മലയാള ഭാഷാ പിതാവ് എന്നറിയപ്പെടുന്നത് ആര്?",
+      options: ["തുഞ്ചത്ത് എഴുത്തച്ഛൻ", "കുമാരനാശാൻ", "വള്ളത്തോൾ", "ഉള്ളൂർ"],
+      answer: 0,
+      note: "മലയാളം/ചരിത്രം വിഭാഗങ്ങളിൽ ആവർത്തിച്ച് വരുന്ന അടിസ്ഥാന fact ആണിത്.",
+    },
+    {
+      q: "കേരളത്തിലെ ക്ഷേത്ര പ്രവേശന വിളംബരം നടന്ന വർഷം ഏത്?",
+      options: ["1936", "1921", "1942", "1956"],
+      answer: 0,
+      note: "കേരള നവോത്ഥാനത്തിലെ വർഷം-സംഭവം matching PSC-യിൽ പ്രധാനമാണ്.",
+    },
+    {
+      q: "സാധുജന പരിപാലന സംഘം സ്ഥാപിച്ചത് ആര്?",
+      options: ["അയ്യങ്കാളി", "ശ്രീനാരായണ ഗുരു", "വക്കം മൗലവി", "ചട്ടമ്പി സ്വാമികൾ"],
+      answer: 0,
+      note: "സംഘടനകളും സ്ഥാപകരും Kerala PSC history ചോദ്യങ്ങളിൽ പതിവാണ്.",
+    },
+    {
+      q: "വൈക്കം സത്യാഗ്രഹം പ്രധാനമായും ഏത് വിഷയവുമായി ബന്ധപ്പെട്ടതാണ്?",
+      options: ["വഴി സഞ്ചാരാവകാശം", "ഉപ്പു നികുതി", "ഭൂനികുതി", "ഭാഷാ സംസ്ഥാനം"],
+      answer: 0,
+      note: "പ്രസ്ഥാനവും ലക്ഷ്യവും കൂട്ടിച്ചേർക്കുന്ന ചോദ്യങ്ങൾക്കായി ഇത് ഓർക്കുക.",
+    },
+  ],
+  maths: [
+    {
+      q: "12, 18, 21, 25 ഇവയുടെ ശരാശരി എത്ര?",
+      options: ["19", "18", "20", "21"],
+      answer: 0,
+      note: "Average = total / count. 76 / 4 = 19.",
+    },
+    {
+      q: "15% of 240 എത്ര?",
+      options: ["36", "24", "30", "42"],
+      answer: 0,
+      note: "10% = 24, 5% = 12, ആകെ 36.",
+    },
+    {
+      q: "2, 4, 8, 16, __ എന്ന ശ്രേണിയിലെ അടുത്ത സംഖ്യ ഏത്?",
+      options: ["32", "24", "30", "28"],
+      answer: 0,
+      note: "ഓരോ പദവും 2 കൊണ്ട് ഗുണിക്കുന്നു.",
+    },
+    {
+      q: "18 പേർ 12 ദിവസത്തിൽ ചെയ്യുന്ന ജോലി 24 പേർ എത്ര ദിവസത്തിൽ ചെയ്യും?",
+      options: ["9", "8", "10", "16"],
+      answer: 0,
+      note: "Workers കൂടുമ്പോൾ days കുറയും: 18 x 12 / 24 = 9.",
+    },
+  ],
+  "english-vocabulary": [
+    {
+      q: "Choose the synonym of 'abundant'.",
+      options: ["Plentiful", "Scarce", "Tiny", "Weak"],
+      answer: 0,
+      note: "Abundant means available in large quantity.",
+    },
+    {
+      q: "Choose the antonym of 'ancient'.",
+      options: ["Modern", "Old", "Historic", "Former"],
+      answer: 0,
+      note: "Ancient means very old; the opposite is modern.",
+    },
+    {
+      q: "One word for 'one who studies the origin of words' is",
+      options: ["Etymologist", "Geologist", "Biologist", "Cartographer"],
+      answer: 0,
+      note: "Etymology is the study of word origins.",
+    },
+    {
+      q: "Correct spelling:",
+      options: ["Necessary", "Neccessary", "Necesary", "Nessesary"],
+      answer: 0,
+      note: "PSC vocabulary papers often include spelling and synonym questions.",
     },
   ],
   biology: [
@@ -810,7 +1014,7 @@ function renderNotesList() {
         <ul class="topic-list">
           ${note.topics.map((topic) => `<li>${topic}</li>`).join("")}
         </ul>
-        <a class="pdf-link" href="${note.pdf}" target="_blank" rel="noreferrer">Open notes PDF</a>
+        <a class="${note.source ? "source-link" : "pdf-link"}" href="${note.pdf}" target="_blank" rel="noreferrer">${note.source ? "Open source page" : "Download notes PDF"}</a>
       </article>
     `
     )
@@ -909,21 +1113,30 @@ function renderCurrentAffairs() {
 }
 
 function setDashboardStats() {
-  const sortedExams = [...exams].sort((a, b) => new Date(a.date) - new Date(b.date));
-  const sortedNotices = [...notifications].sort((a, b) => new Date(a.lastDate) - new Date(b.lastDate));
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const sortedExams = [...exams]
+    .filter((exam) => new Date(`${exam.date}T00:00:00`) >= today)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+  const sortedNotices = [...notifications]
+    .filter((notice) => new Date(`${notice.lastDate}T00:00:00`) >= today)
+    .sort((a, b) => new Date(a.lastDate) - new Date(b.lastDate));
+  const nextExam = sortedExams[0] || exams[0];
+  const nextNotice = sortedNotices[0] || notifications[0];
   $("#exam-count").textContent = exams.length;
   $("#notification-count").textContent = notifications.length;
-  $("#next-exam-name").textContent = sortedExams[0].name;
-  $("#next-exam-date").textContent = formatDate(sortedExams[0].date);
-  $("#next-deadline-name").textContent = sortedNotices[0].title;
-  $("#next-deadline-date").textContent = formatDate(sortedNotices[0].lastDate);
-  $("#today-focus").textContent = `Revise ${sortedExams[0].syllabus[0].toLowerCase()} and complete one infinite quiz set before ${sortedExams[0].name}.`;
+  $("#next-exam-name").textContent = nextExam.name;
+  $("#next-exam-date").textContent = formatDate(nextExam.date);
+  $("#next-deadline-name").textContent = nextNotice.title;
+  $("#next-deadline-date").textContent = formatDate(nextNotice.lastDate);
+  $("#today-focus").textContent = `Revise ${nextExam.syllabus[0].toLowerCase()} and complete one infinite quiz set before ${nextExam.name}.`;
 }
 
 function activateTab(tabId) {
   $$(".tab").forEach((tab) => tab.classList.toggle("active", tab.dataset.tab === tabId));
   $$(".panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
-  window.location.hash = tabId;
+  history.replaceState(null, "", `#${tabId}`);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function bindEvents() {
@@ -986,7 +1199,7 @@ function bindEvents() {
 
 function init() {
   fillYearSelect("#syllabus-year", [2026, 2025, 2024, 2023]);
-  fillYearSelect("#question-year", [2025, 2024, 2023]);
+  fillYearSelect("#question-year", [2026, 2025, 2024, 2023]);
   fillYearSelect("#ca-year", [2026, 2025, 2024, 2023]);
   $("#ca-month").innerHTML = `<option value="all">All months</option>${months.map((month) => `<option value="${month}">${month}</option>`).join("")}`;
 
