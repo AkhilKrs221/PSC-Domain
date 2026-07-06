@@ -133,6 +133,38 @@ main {
   padding: 32px 0 56px;
 }
 
+.notification-bar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  background: rgba(32, 38, 43, 0.94);
+  border: 1px solid rgba(73, 200, 215, 0.22);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.notification-bar strong {
+  color: var(--green);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.notification-bar div {
+  overflow: hidden;
+  color: #d6ded9;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-bar a {
+  color: var(--cyan);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .panel {
   display: none;
 }
@@ -602,9 +634,18 @@ footer span:first-child {
 @media (max-width: 860px) {
   .topbar,
   .section-head,
+  .notification-bar,
   footer {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .notification-bar {
+    display: flex;
+  }
+
+  .notification-bar div {
+    white-space: normal;
   }
 
   .hero,

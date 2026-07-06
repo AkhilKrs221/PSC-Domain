@@ -47,6 +47,12 @@
     </header>
 
     <main>
+      <aside class="notification-bar" aria-label="Kerala PSC notification bar">
+        <strong>Latest PSC notifications</strong>
+        <div id="notification-ticker">Loading Kerala PSC notification links...</div>
+        <a href="https://www.keralapsc.gov.in/notifications" target="_blank" rel="noreferrer">Official source</a>
+      </aside>
+
       <section class="panel active" id="home">
         <div class="hero">
           <div class="hero-copy">
@@ -69,7 +75,7 @@
             <div class="mini-stats">
               <span><strong id="exam-count">0</strong> exams</span>
               <span><strong id="notification-count">0</strong> notices</span>
-              <span><strong>12</strong> quiz banks</span>
+              <span><strong id="quiz-count">0</strong> quiz banks</span>
             </div>
           </div>
         </div>
@@ -128,7 +134,7 @@
           </div>
         </div>
         <p class="section-note">
-          Use the official Kerala PSC syllabus archive for the complete live list. Local PDF cards and source links are arranged for all upcoming examinations tracked on this site.
+          Use the official Kerala PSC syllabus archive for the complete live list. The local cards give downloadable PDFs for every tracked upcoming examination plus the official source for all remaining PSC syllabus PDFs.
         </p>
         <div class="cards-grid" id="syllabus-list"></div>
       </section>
@@ -145,7 +151,7 @@
           </div>
         </div>
         <p class="section-note">
-          This page links to the official Kerala PSC previous question archive and downloadable local PDFs. Add newly released answer keys here after official verification.
+          This page links to the official Kerala PSC previous question archive and downloadable local PYQ/answer PDFs for the last three years. Use the official archive for newly released papers and answer-key verification.
         </p>
         <div class="cards-grid" id="question-list"></div>
       </section>
@@ -222,6 +228,6 @@
       <span>Built for Kerala PSC aspirants. Verify final notices and official PDFs on the Kerala PSC portal before applying.</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
