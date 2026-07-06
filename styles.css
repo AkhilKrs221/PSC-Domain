@@ -65,10 +65,17 @@ select {
   width: 42px;
   height: 42px;
   place-items: center;
-  background: #e7efe7;
+  background:
+    linear-gradient(135deg, #e7efe7 0%, #bdf3d0 50%, #49c8d7 100%);
   color: #112018;
   border-radius: 8px;
   font-weight: 900;
+  letter-spacing: 0;
+}
+
+.brand-mark span {
+  display: block;
+  font-size: 0.78rem;
 }
 
 .brand strong,
@@ -189,6 +196,13 @@ h3 {
   color: #d6ded9;
   font-size: 1.08rem;
   line-height: 1.7;
+}
+
+.section-note {
+  max-width: 860px;
+  margin: -8px 0 18px;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .hero-actions,
@@ -468,11 +482,19 @@ select:focus {
   color: #ffd3d7;
 }
 
-.quiz-switch {
+.quiz-switch,
+.quiz-topics {
   padding: 4px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.quiz-topics {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .quiz-type {
@@ -485,6 +507,26 @@ select:focus {
 .quiz-type.active {
   background: var(--green);
   color: #0c1912;
+}
+
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-top: 8px;
+  padding: 0 12px;
+  background: rgba(73, 200, 215, 0.12);
+  border: 1px solid rgba(73, 200, 215, 0.24);
+  border-radius: 8px;
+  color: var(--cyan);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.official-card {
+  background:
+    linear-gradient(135deg, rgba(67, 209, 138, 0.12), rgba(73, 200, 215, 0.08)),
+    rgba(25, 29, 33, 0.9);
 }
 
 .quiz-board {
