@@ -1,6 +1,6 @@
 const officialLinks = {
   notifications: "https://www.keralapsc.gov.in/notifications",
-  schedule: "https://www.keralapsc.gov.in/examination-schedule",
+  schedule: "https://www.keralapsc.gov.in/examinations",
   syllabus: "https://www.keralapsc.gov.in/syllabus1",
   questions: "https://www.keralapsc.gov.in/previous-question-papers",
 };
