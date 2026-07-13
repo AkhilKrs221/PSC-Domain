@@ -13,32 +13,32 @@ const externalSources = {
 const uploadPath = "assets/uploads/";
 
 const uploadedPdfs = [
-  { title: "കേരള ചരിത്രം Quiz", tag: "Kerala History", pdf: `${uploadPath}kerala_history_quiz.pdf`, topics: ["കേരള നവോത്ഥാനം", "സാമൂഹിക പരിഷ്കരണം", "PSC ആവർത്തന ചോദ്യങ്ങൾ"] },
-  { title: "Kerala History MCQ", tag: "Kerala History", pdf: `${uploadPath}Kerala_History_MCQ.pdf`, topics: ["കേരള ചരിത്രം", "സംഭവ വർഷങ്ങൾ", "പ്രമുഖ വ്യക്തികൾ"] },
-  { title: "Kerala History MCQs", tag: "Kerala History", pdf: `${uploadPath}kerala_history_mcqs.pdf`, topics: ["കേരള ചരിത്രം", "മുൻവർഷ ചോദ്യ മാതൃക"] },
-  { title: "Kerala History MCQs - Set 2", tag: "Kerala History", pdf: `${uploadPath}kerala_history_mcqs (2).pdf`, topics: ["കേരള ചരിത്രം", "മാരത്തൺ റിവിഷൻ"] },
-  { title: "KERALA HISTORY MARATHON", tag: "Kerala History", pdf: `${uploadPath}KERALA HISTORY -MARATHON.pdf`, topics: ["കേരള ചരിത്രം", "മുഴുവൻ റിവിഷൻ", "പ്രധാന PSC facts"] },
-  { title: "Indian History MCQ", tag: "Indian History", pdf: `${uploadPath}indian_history_mcq.pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "സ്വാതന്ത്ര്യ സമരം", "ദേശീയ പ്രസ്ഥാനം"] },
-  { title: "Indian History Quiz", tag: "Indian History", pdf: `${uploadPath}indian_history_quiz.pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "MCQ practice"] },
-  { title: "Indian History Exam Questions", tag: "Indian History", pdf: `${uploadPath}Indian_History_Exam_Questions.pdf`, topics: ["മുൻവർഷ ചോദ്യം", "ചരിത്രം"] },
-  { title: "ഇന്ത്യൻ ചരിത്രം FULL REVISION", tag: "Indian History", pdf: `${uploadPath}ഇന്ത്യൻ  ചരിത്രം FULL REVISION (2).pdf`, topics: ["ഇന്ത്യൻ ചരിത്രം", "Malayalam notes", "Full revision"] },
-  { title: "December 2025 Current Affairs 50 MCQs", tag: "Current Affairs", pdf: `${uploadPath}December_2025_CA_50_MCQs.pdf`, topics: ["ഡിസംബർ 2025", "Current affairs", "MCQ"] },
-  { title: "February CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}FEBRUARY CA 2026.pdf`, topics: ["ഫെബ്രുവരി 2026", "Malayalam current affairs"] },
-  { title: "February CA 2026 Quiz", tag: "Current Affairs", pdf: `${uploadPath}february_ca_2026_quiz.pdf`, topics: ["ഫെബ്രുവരി 2026", "Current affairs quiz"] },
-  { title: "March CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}MARCH CA 2026.pdf`, topics: ["മാർച്ച് 2026", "Malayalam current affairs"] },
-  { title: "March CA 2026 MCQ", tag: "Current Affairs", pdf: `${uploadPath}march_ca_2026_mcq.pdf`, topics: ["മാർച്ച് 2026", "Current affairs quiz"] },
-  { title: "April CA 2026 Notes", tag: "Current Affairs", pdf: `${uploadPath}APRIL CA 2026.pdf`, topics: ["ഏപ്രിൽ 2026", "Malayalam current affairs"] },
-  { title: "April 2026 Current Affairs Quiz", tag: "Current Affairs", pdf: `${uploadPath}April_2026_Current_Affairs_Quiz.pdf`, topics: ["ഏപ്രിൽ 2026", "Current affairs quiz"] },
-  { title: "Malayalam History MCQs", tag: "History Malayalam", pdf: `${uploadPath}malayalam_history_mcqs.pdf`, topics: ["മലയാളം", "ചരിത്രം", "PSC MCQ"] },
-  { title: "Maths Interest MCQ Explanations", tag: "Maths", pdf: `${uploadPath}maths_interest_mcq_explanations (2).pdf`, topics: ["പലിശ", "ഗണിതം", "explanations"] },
-  { title: "Math Average Malayalam", tag: "Maths", pdf: `${uploadPath}math_average_malayalam.pdf`, topics: ["ശരാശരി", "Malayalam maths"] },
-  { title: "Maths Series", tag: "Maths", pdf: `${uploadPath}Maths - ശ്രേണികൾ.pdf`, topics: ["ശ്രേണികൾ", "PSC maths"] },
-  { title: "Maths Mental Ability 200 Questions", tag: "Maths", pdf: `${uploadPath}Maths_Mental_Ability_200_Questions.pdf`, topics: ["mental ability", "200 questions", "reasoning"] },
-  { title: "Math Questions With Explanations", tag: "Maths", pdf: `${uploadPath}math_questions_with_explanations.pdf`, topics: ["ഗണിതം", "explanations"] },
-  { title: "Physics Prelims MCQ", tag: "Physics", pdf: `${uploadPath}physics_prelims_mcq.html.pdf`, topics: ["Physics", "prelims", "MCQ"] },
-  { title: "English Vocabulary", tag: "English", pdf: `${uploadPath}English -Vocabulary.pdf`, topics: ["vocabulary", "English", "PSC"] },
-  { title: "10th Level Marked Vocabulary - Part 1", tag: "English", pdf: `${uploadPath}10TH_LEVEL_MARKED_VOCABSPEDIA_part1.pdf`, topics: ["10th level", "vocabulary", "marked PDF", "Part 1"] },
-  { title: "10th Level Marked Vocabulary - Part 2", tag: "English", pdf: `${uploadPath}10TH_LEVEL_MARKED_VOCABSPEDIA_part2.pdf`, topics: ["10th level", "vocabulary", "marked PDF", "Part 2"] },
+  { title: "കേരള ചരിത്രം Quiz", tag: "Kerala History", pdf: pdf: "assets/uploads/kerala_history_quiz.pdf", topics: ["കേരള നവോത്ഥാനം", "സാമൂഹിക പരിഷ്കരണം", "PSC ആവർത്തന ചോദ്യങ്ങൾ"] },
+  { title: "Kerala History MCQ", tag: "Kerala History", pdf: "assets/uploads/Kerala_History_MCQ.pdf", topics: ["കേരള ചരിത്രം", "സംഭവ വർഷങ്ങൾ", "പ്രമുഖ വ്യക്തികൾ"] },
+  { title: "Kerala History MCQs", tag: "Kerala History", pdf: "assets/uploads/kerala_history_mcqs.pdf", topics: ["കേരള ചരിത്രം", "മുൻവർഷ ചോദ്യ മാതൃക"] },
+  { title: "Kerala History MCQs - Set 2", tag: "Kerala History", pdf: "assets/uploads/kerala_history_mcqs (2).pdf", topics: ["കേരള ചരിത്രം", "മാരത്തൺ റിവിഷൻ"] },
+  { title: "KERALA HISTORY MARATHON", tag: "Kerala History", pdf: "assets/uploads/KERALA HISTORY -MARATHON.pdf", topics: ["കേരള ചരിത്രം", "മുഴുവൻ റിവിഷൻ", "പ്രധാന PSC facts"] },
+  { title: "Indian History MCQ", tag: "Indian History", pdf: "assets/uploads/indian_history_mcq.pdf", topics: ["ഇന്ത്യൻ ചരിത്രം", "സ്വാതന്ത്ര്യ സമരം", "ദേശീയ പ്രസ്ഥാനം"] },
+  { title: "Indian History Quiz", tag: "Indian History", pdf: "assets/uploads/indian_history_quiz.pdf", topics: ["ഇന്ത്യൻ ചരിത്രം", "MCQ practice"] },
+  { title: "Indian History Exam Questions", tag: "Indian History", pdf: "assets/uploads/Indian_History_Exam_Questions.pdf", topics: ["മുൻവർഷ ചോദ്യം", "ചരിത്രം"] },
+  { title: "ഇന്ത്യൻ ചരിത്രം FULL REVISION", tag: "Indian History", pdf: "assets/uploads/ഇന്ത്യൻ  ചരിത്രം FULL REVISION (2).pdf", topics: ["ഇന്ത്യൻ ചരിത്രം", "Malayalam notes", "Full revision"] },
+  { title: "December 2025 Current Affairs 50 MCQs", tag: "Current Affairs", pdf: "assets/uploads/December_2025_CA_50_MCQs.pdf", topics: ["ഡിസംബർ 2025", "Current affairs", "MCQ"] },
+  { title: "February CA 2026 Notes", tag: "Current Affairs", pdf: "assets/uploads/FEBRUARY CA 2026.pdf", topics: ["ഫെബ്രുവരി 2026", "Malayalam current affairs"] },
+  { title: "February CA 2026 Quiz", tag: "Current Affairs", pdf: "assets/uploads/february_ca_2026_quiz.pdf", topics: ["ഫെബ്രുവരി 2026", "Current affairs quiz"] },
+  { title: "March CA 2026 Notes", tag: "Current Affairs", pdf: "assets/uploads/MARCH CA 2026.pdf", topics: ["മാർച്ച് 2026", "Malayalam current affairs"] },
+  { title: "March CA 2026 MCQ", tag: "Current Affairs", pdf: "assets/uploads/march_ca_2026_mcq.pdf", topics: ["മാർച്ച് 2026", "Current affairs quiz"] },
+  { title: "April CA 2026 Notes", tag: "Current Affairs", pdf: "assets/uploads/APRIL CA 2026.pdf", topics: ["ഏപ്രിൽ 2026", "Malayalam current affairs"] },
+  { title: "April 2026 Current Affairs Quiz", tag: "Current Affairs", pdf: "assets/uploads/April_2026_Current_Affairs_Quiz.pdf", topics: ["ഏപ്രിൽ 2026", "Current affairs quiz"] },
+  { title: "Malayalam History MCQs", tag: "History Malayalam", pdf: "assets/uploads/malayalam_history_mcqs.pdf", topics: ["മലയാളം", "ചരിത്രം", "PSC MCQ"] },
+  { title: "Maths Interest MCQ Explanations", tag: "Maths", pdf: "assets/uploads/maths_interest_mcq_explanations (2).pdf", topics: ["പലിശ", "ഗണിതം", "explanations"] },
+  { title: "Math Average Malayalam", tag: "Maths", pdf: "assets/uploads/math_average_malayalam.pdf", topics: ["ശരാശരി", "Malayalam maths"] },
+  { title: "Maths Series", tag: "Maths", pdf: "assets/uploads/Maths - ശ്രേണികൾ.pdf", topics: ["ശ്രേണികൾ", "PSC maths"] },
+  { title: "Maths Mental Ability 200 Questions", tag: "Maths", pdf: "assets/uploads/Maths_Mental_Ability_200_Questions.pdf", topics: ["mental ability", "200 questions", "reasoning"] },
+  { title: "Math Questions With Explanations", tag: "Maths", pdf: "assets/uploads/math_questions_with_explanations.pdf", topics: ["ഗണിതം", "explanations"] },
+  { title: "Physics Prelims MCQ", tag: "Physics", pdf: "assets/uploads/physics_prelims_mcq.html.pdf", topics: ["Physics", "prelims", "MCQ"] },
+  { title: "English Vocabulary", tag: "English", pdf: "assets/uploads/English -Vocabulary.pdf", topics: ["vocabulary", "English", "PSC"] },
+  { title: "10th Level Marked Vocabulary - Part 1", tag: "English", pdf: "assets/uploads/10TH_LEVEL_MARKED_VOCABSPEDIA_part1.pdf", topics: ["10th level", "vocabulary", "marked PDF", "Part 1"] },
+  { title: "10th Level Marked Vocabulary - Part 2", tag: "English", pdf: "assets/uploads/10TH_LEVEL_MARKED_VOCABSPEDIA_part2.pdf", topics: ["10th level", "vocabulary", "marked PDF", "Part 2"] },
 ];
 
 const exams = [
@@ -300,10 +300,10 @@ const notePdfs = [
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const currentAffairsPdfOverrides = {
-  "2025-12": `${uploadPath}December_2025_CA_50_MCQs.pdf`,
-  "2026-02": `${uploadPath}FEBRUARY CA 2026.pdf`,
-  "2026-03": `${uploadPath}MARCH CA 2026.pdf`,
-  "2026-04": `${uploadPath}APRIL CA 2026.pdf`,
+  "2025-12": "assets/uploads/December_2025_CA_50_MCQs.pdf",
+  "2026-02": "assets/uploads/FEBRUARY CA 2026.pdf",
+  "2026-03": "assets/uploads/MARCH CA 2026.pdf",
+  "2026-04": "assets/uploads/APRIL CA 2026.pdf",
 };
 
 const currentAffairs = [2026, 2025, 2024, 2023].flatMap((year) =>
